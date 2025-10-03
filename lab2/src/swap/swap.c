@@ -2,5 +2,7 @@
 
 void Swap(char *left, char *right)
 {
-	// ваш код здесь
+    char temp = *left;   // сохраняем значение по адресу left
+    *left = *right;      // записываем в left то, что было в right
+    *right = temp;       // в right кладём сохранённое
 }
